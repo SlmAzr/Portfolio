@@ -1,0 +1,372 @@
+* {
+ 
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-size: 30px;
+}
+
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+  color: #fff;
+  background-color: #161630cc;
+  text-align: center;
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar a {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    rgb(255, 255, 255) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar a:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar :hover {
+  background-position: 0;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+section.home {
+  height: 92vh;
+  background-color: #27374d;
+}
+.incipit {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+}
+@media (max-width: 768px) {
+  .incipit p{
+    width: 100%;
+    font-size: 0.5rem;
+  }
+}
+/* PORTFOLIO */
+.works {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin: auto;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.works img {
+  max-width: 900px;
+  min-height: 680px;
+  border-radius: 0.5rem;
+  object-fit: fill;
+}
+.title {
+  padding: 1rem;
+  color: #fff;
+}
+#portfolio {
+  background-color: #526d82;
+}
+
+#portfolio h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.works p {
+  color: #fff;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.firstW {
+  padding-top: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  padding-bottom: 1rem;
+}
+.scdW {
+  padding-top: 3.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.firstDesc {
+  margin-left: 30px;
+}
+.scdDesc {
+  margin-right: 30px;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1.5rem;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  font-size: 35px;
+}
+.lang li {
+  border: 1px solid #fff;
+  border-radius: 5em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin: 0.3em 0.2em;
+  padding: 0.4em 0.6em;
+}
+
+/* Styles pour les écrans de petite taille (par exemple, smartphones) */
+@media (max-width: 768px) {
+  .works {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  .works img {
+    width: 100%;
+    min-height: auto;
+
+  }
+  .title {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .works p {
+    padding-top: 10%;
+    font-size: 0.8rem;
+  }
+  .firstW, .scdW {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .firstDesc, .scdDesc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .lang {
+    padding-top: 0.5rem;
+  }
+  .lang li {
+    font-size: 0.6rem;
+    margin: 0.2rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+/* Styles pour les écrans de taille moyenne à grande (par exemple, tablettes et ordinateurs) */
+@media (max-width: 1325px) {
+  .works {
+    flex-basis: 50%;
+  }
+  .works img {
+    width: 100%;
+    min-height: auto;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .works p {
+    font-size: 1.25rem;
+  }
+  .firstW,.scdW {
+    flex-direction: column;
+    padding-top: 3.5rem;
+  }
+  
+  .firstDesc p,.scdDesc p {
+    font-size: 0.7rem;
+    margin-left: 30px;
+  }
+ 
+  .lang {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5rem;
+  }
+  .lang li {
+    font-size: 0.5rem;
+    margin: 0.3em 0.2em;
+    padding: 0.4em 0.6em;
+  }
+}
+
+
+/* Style de la section Compétences */
+#skills {
+  
+  background-color: #9DB2BF;
+  padding: 40px 0;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100px;
+  transition: filter 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.skill:hover {
+  filter: brightness(1.5); 
+  background-color: rgba(62, 77, 88, 0.144); 
+  color: #fff;
+}
+
+.skill img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.skill p {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Style pour les petits écrans */
+@media (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .skill {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style pour la section Contact */
+#contact {
+  background-color: #DDE6ED;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-links a:hover {
+ filter: brightness(1.5); 
+  /* color: #007bff; Changez la couleur au survol */
+}
+
+.contact-links img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+/* Style pour les petits écrans */
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* animation */
+
+.animate-img {
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.animate-imgs {
+  transform: translateX(100%);
+  opacity: 0;
+  display: block;
+}
+
+.scroll .animate-img,
+.animate-imgs,
+.animate {
+  transition: 1.5s;
+}
+.scroll.show-animate .animate-img {
+  transform: translateX(0);
+}
+.scroll.show-animate .animate-img,
+.scroll.show-animate .animate-imgs {
+  transform: translateX(0);
+  opacity: 1;
+}
