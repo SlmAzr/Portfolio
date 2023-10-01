@@ -6,6 +6,12 @@
   box-sizing: 0;
   font-size: 30px;
 }
+/* img{
+  width: 600px;
+  height: auto;
+  border-radius: 0.5rem;
+} */
+
 
 .navbar {
   width: 100%;
@@ -77,8 +83,21 @@ section.home {
   align-items: center;
   color: #fff;
   display: flex;
-  flex-direction: row;
-  flex-basis: 50%;
+  flex-direction: column;
+}
+.neon-border{
+  margin: auto;
+}
+.CV{
+ margin-bottom: auto;
+}
+.CV a {
+  border-radius: 1rem;
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+ 
 }
 @media (max-width: 768px) {
   .incipit p{
@@ -95,12 +114,12 @@ section.home {
   justify-content: center;
   overflow-x: hidden;
 }
-.works img {
-  max-width: 900px;
-  min-height: 680px;
+ .works img {
+  max-width: 650px;
+  height: auto;
   border-radius: 0.5rem;
   object-fit: fill;
-}
+} 
 .title {
   padding: 1rem;
   color: #fff;
@@ -134,6 +153,7 @@ section.home {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
 .firstDesc {
@@ -160,6 +180,14 @@ section.home {
   font-weight: 700;
   margin: 0.3em 0.2em;
   padding: 0.4em 0.6em;
+}
+
+.works i{
+  font-size: 25px;
+  padding-top: 1rem;
+  width: 100%;
+  text-align: center;
+  color: #fff;
 }
 
 /* Styles pour les écrans de petite taille (par exemple, smartphones) */
