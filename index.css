@@ -1,18 +1,10 @@
 * {
- 
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: 0;
   font-size: 30px;
 }
-/* img{
-  width: 600px;
-  height: auto;
-  border-radius: 0.5rem;
-} */
-
-
 .navbar {
   width: 100%;
   overflow: hidden;
@@ -85,11 +77,11 @@ section.home {
   display: flex;
   flex-direction: column;
 }
-.neon-border{
+.neon-border {
   margin: auto;
 }
-.CV{
- margin-bottom: auto;
+.CV {
+  margin-bottom: auto;
 }
 .CV a {
   border-radius: 1rem;
@@ -97,10 +89,9 @@ section.home {
   border: 1px solid #fff;
   text-decoration: none;
   color: #fff;
- 
 }
 @media (max-width: 768px) {
-  .incipit p{
+  .incipit p {
     width: 100%;
     font-size: 0.5rem;
   }
@@ -114,12 +105,12 @@ section.home {
   justify-content: center;
   overflow-x: hidden;
 }
- .works img {
+.works img {
   max-width: 650px;
   height: auto;
   border-radius: 0.5rem;
   object-fit: fill;
-} 
+}
 .title {
   padding: 1rem;
   color: #fff;
@@ -182,7 +173,7 @@ section.home {
   padding: 0.4em 0.6em;
 }
 
-.works i{
+.works i {
   font-size: 25px;
   padding-top: 1rem;
   width: 100%;
@@ -199,7 +190,6 @@ section.home {
   .works img {
     width: 100%;
     min-height: auto;
-
   }
   .title {
     padding: 0.5rem;
@@ -209,11 +199,13 @@ section.home {
     padding-top: 10%;
     font-size: 0.8rem;
   }
-  .firstW, .scdW {
+  .firstW,
+  .scdW {
     flex-direction: column;
     padding-top: 1rem;
   }
-  .firstDesc, .scdDesc {
+  .firstDesc,
+  .scdDesc {
     margin-left: 0;
     margin-right: 0;
   }
@@ -242,16 +234,18 @@ section.home {
   .works p {
     font-size: 1.25rem;
   }
-  .firstW,.scdW {
+  .firstW,
+  .scdW {
     flex-direction: column;
     padding-top: 3.5rem;
   }
-  
-  .firstDesc p,.scdDesc p {
+
+  .firstDesc p,
+  .scdDesc p {
     font-size: 0.7rem;
     margin-left: 30px;
   }
- 
+
   .lang {
     flex-direction: row;
     justify-content: center;
@@ -264,11 +258,9 @@ section.home {
   }
 }
 
-
 /* Style de la section Compétences */
 #skills {
-  
-  background-color: #9DB2BF;
+  background-color: #9db2bf;
   padding: 40px 0;
   text-align: center;
   transition: background-color 0.3s ease-in-out;
@@ -288,7 +280,7 @@ section.home {
 }
 
 .soft-skills-list {
-  margin-top: 20px; ;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -303,7 +295,7 @@ section.home {
   width: 100px;
   transition: filter 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
-.soft-skill{
+.soft-skill {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -314,8 +306,8 @@ section.home {
 }
 
 .skill:hover {
-  filter: brightness(1.5); 
-  background-color: rgba(62, 77, 88, 0.144); 
+  filter: brightness(1.5);
+  background-color: rgba(62, 77, 88, 0.144);
   color: #fff;
 }
 
@@ -335,18 +327,16 @@ section.home {
 }
 
 .soft-skill:hover {
-  filter: brightness(1.5); 
-  background-color: rgba(62, 77, 88, 0.144); 
+  filter: brightness(1.5);
+  background-color: rgba(62, 77, 88, 0.144);
   color: #fff;
 }
-
 
 /* Style pour les petits écrans */
 @media (max-width: 768px) {
   .skills-list {
     flex-direction: column;
     align-items: center;
-    
   }
 
   .skill {
@@ -357,7 +347,7 @@ section.home {
 
 /* Style pour la section Contact */
 #contact {
-  background-color: #DDE6ED;
+  background-color: #dde6ed;
   padding: 40px 0;
   text-align: center;
 }
@@ -381,7 +371,7 @@ section.home {
 }
 
 .contact-links a:hover {
- filter: brightness(1.5); 
+  filter: brightness(1.5);
   /* color: #007bff; Changez la couleur au survol */
 }
 
@@ -397,8 +387,6 @@ section.home {
     align-items: center;
   }
 }
-
-
 
 /* animation */
 
