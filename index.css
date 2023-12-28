@@ -287,6 +287,13 @@ section.home {
   gap: 20px;
 }
 
+.soft-skills-list {
+  margin-top: 20px; ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 .skill {
   background-color: #fff;
   padding: 20px;
@@ -294,6 +301,15 @@ section.home {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100px;
+  transition: filter 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.soft-skill{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: auto;
   transition: filter 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
@@ -310,9 +326,20 @@ section.home {
 
 .skill p {
   font-size: 20px;
-  margin-top: 10px;
   font-weight: bold;
 }
+
+.soft-skill p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.soft-skill:hover {
+  filter: brightness(1.5); 
+  background-color: rgba(62, 77, 88, 0.144); 
+  color: #fff;
+}
+
 
 /* Style pour les petits écrans */
 @media (max-width: 768px) {
